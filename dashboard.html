@@ -1,0 +1,2077 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>parameter</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description"/>
+        <meta content="" name="author"/>
+        <meta
+        http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/icons/5-compact-cd-dvd-disk-png-image_32x32.ico">
+
+
+        <!-- plugin css -->
+        <!-- <link href="assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet"
+                                                                                type="text/css" /> -->
+        <!-- App css -->
+        <link href="assets/css/default/bootstrap.min.css" rel="stylesheet" type="text/css" id="bs-default-stylesheet"/> <link href="assets/css/default/app.min.css" rel="stylesheet" type="text/css" id="app-default-stylesheet"/>
+
+        <!-- <link href="assets/css/default/bootstrap-dark.min.css" rel="stylesheet" type="text/css" id="bs-dark-stylesheet" /> -->
+        <!-- <link href="assets/css/default/app-dark.min.css" rel="stylesheet" type="text/css" id="app-dark-stylesheet" /> -->
+
+        <!-- <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" /> -->
+
+        <!-- icons -->
+        <!-- <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'> </script> -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css"/> <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <!-- 
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+        <!--         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+         -->
+    <!-- <meta name="theme-color" content="#6559cc"> </head> -->
+
+    <body
+        class="loading" data-layout='{"mode": "light", "width": "fluid", "menuPosition": "fixed", "sidebar": { "color": "light", "size": "default", "showuser": true}, "topbar": {"color": "dark"}, "showRightSidebarOnPageLoad": true}' style="background-color: #edf2f8;">
+
+
+        <!-- Begin page -->
+        <div
+            id="wrapper">
+
+            <!-- Topbar Start -->
+            <div class="navbar-custom  bg-white mt-1" >
+                <div class="container-fluid">
+
+                    <div class="d-flex flex-column ">
+
+                        <div class="top-nav-custom bg-primary-gd">
+                            <div class="search-wrapper d-none search-activities">
+                                
+                                <div class="search-input d-flex ">
+                                    <button class="back-search bg-white border darken-color" >
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                                          </svg>
+                                        </button>
+                                    <input id="search" type="text" class="form-control  shadow-lg " placeholder="Search">
+                                    <button class="bg-white border darken-color ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                        </svg>
+                                    </button>
+
+                                </div>
+                           </div>
+
+                            <ul class="list-unstyled topnav-menu float-end mb-0  first-nav">
+
+                                <li>
+
+                                    <a href="" class="float-end   bold-text logo-text custom-link search-button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-search" viewbox="0 0 16 16">
+                                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                        </svg>
+                                    </a>
+
+                                </li>
+
+
+                                <li>
+
+                                    <a href="" class="float-end profile-wrapper  text-white bold-text custom-link">
+                                        <img id="profile-image" src="assets/icons/agent.png" alt="" height="38" width="38" style="border-radius: 100%;">
+                                    </a>
+
+                                </li>
+
+
+                            </ul>
+
+
+                            <!-- home -->
+                            <ul class="list-unstyled topnav-menu topnav-menu-left m-0 first-nav  nav-1">
+
+
+                                <li>
+                                    <button class="button-menu-mobile   logo pb-2 menu-bars  float-sm-start " >
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" fill="currentColor" class="bi bi-text-left" viewbox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li></li>
+                                <li>
+                                    <button class=" waves-effect waves-light  logo-text-nav p-0 btn  custom-link  pb-2 ">
+                                        parameter
+                                    </button>
+                                </li>
+                            </li>
+
+
+                            <li>
+
+                                <a class="navbar-toggle nav-link" data-bs-toggle="collapse" data-bs-target="#topnav-menu-content">
+                                    <div class="lines">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </a>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="phone-activities navbar-secondary p-0 pb-0 pt-0 bg-white " style="border-bottom: 1px solid #edf2f8;">
+                        <div class="top-nav-1 home-activities">
+                        <ul class="list-unstyled topnav-menu topnav-menu-phone topnav-menu-left d-flex justify-content-between " style="margin-left: 0px !important;">
+
+                            <li class="p-0 m-0 nav-top">
+                                <a href="#" class="      custom-menu-icon position-relative m-0 to-home active" style="margin: 0px !important;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" fill="currentColor" class="bi bi-house-door" viewbox="0 0 16 16">
+                                        <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+                                    </svg>
+                                    <div class="notification-wrapper num-music">
+                                        0
+                                    </div>
+                                </a>
+
+                            </li>
+
+                            <li class="p-0 m-0 nav-top">
+                                <a href="#" class="    custom-menu-icon position-relative m-0 battles">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chat-left-dots" viewBox="0 0 16 16">
+                                        <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                        <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                      </svg>
+                                    <div class="notification-wrapper num-battles">
+                                        9
+                                    </div>
+                                </a>
+
+                            </li>
+
+
+                            <li class="nav-top">
+                                <a href="#" class="custom-menu-icon position-relative view-a">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                                      </svg>
+                                    <div class="notification-wrapper num-agents">
+                                        3
+                                    </div>
+                                    <!-- <span class="notification-wrapper num-artist"></span> -->
+                                </a>
+
+                            </li>
+
+
+                            <li class="nav-top">
+
+                                <a href="#" class="  darken-color home-activities" data-bs-toggle="modal" data-bs-target="#bs-example-modal-sm">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                                        <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                                        <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+                                      </svg>   
+                                </a>
+
+                              
+
+                            </li>
+
+                            <li>
+                                <a href="#" class="    custom-menu-icon position-relative" data-bs-toggle="modal" data-bs-target="#right-modal">
+
+
+                                   
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                                      </svg>
+                                    <span class="notification-wrapper num-artist"></span>
+                                </a>
+
+                            </li>
+
+
+                        </ul>
+                       </div>
+
+                       <div class="heading-activities d-none">
+                         <div class="d-flex ">                    
+                          <a class="to-home mr-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#1f4d65" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                              </svg>
+                          </a>
+
+                           <a class="font-20 darken-color ml-2 activity-name darken-color header-title"></a>
+                           <!-- <a></a> -->
+                         </div>
+                         
+                       </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+        <!-- end Topbar -->
+
+        <!-- ========== Left Sidebar Start ========== -->
+
+
+        <div
+            class="left-side-menu bg-white-grey mt-1">
+
+            <!-- LOGO -->
+            <div class="logo-box mt-1  bg-primary-gd"></div>
+
+            <div class="h-100 side-menu-bar position-relative" data-simplebar>
+
+                <!-- user box -->
+
+                <!--- Sidemenu -->
+
+                    <div id="sidebar-menu" class=""> <ul id="side-menu " class="  p-0 ">
+
+                        <!-- <li class="float-center header-title m-2 text-gradien mb-0 mt-0">
+                                                                                                    <span class="month"></span>
+                                                                                                    COMPETITION</li> -->
+                        <!-- <li class="menu-title font-10">TOP LIST</li> -->
+                            <li class="menu-title font-20 mt-3"> MENU</li>
+                            <li>
+                              <a href="#" class="to-home menu-btn">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-house-door" viewbox="0 0 16 16">
+                                      <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+                                  </svg>
+                                  <span class="badge bg-danger float-end num-music computer-activities"></span>
+                                  <span>
+                                      Home
+                                  </span>
+                              </a>
+                          </li>
+  
+  
+                          <li>
+                            <a href="#" class="to-home menu-btn">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chat-left-dots" viewBox="0 0 16 16">
+                                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                              </svg>
+                                <span class="badge bg-danger float-end num-music computer-activities"></span>
+                                <span>
+                                    Chat
+                                </span>
+                            </a>
+                        </li>
+
+                         <li>
+                        <a href="#" class="to-home menu-btn">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                            <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                            <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+                          </svg>
+                            <span class="badge bg-danger float-end num-music computer-activities"></span>
+                            <span>
+                                Settings
+                            </span>
+                        </a>
+                    </li>
+
+
+
+                        <li>
+                          <a href="#" class="to-home menu-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                              <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                            </svg>
+                              <span class="badge bg-danger float-end num-music computer-activities"></span>
+                              <span>
+                                  Notifications
+                              </span>
+                          </a>
+                      </li>
+
+
+                     
+
+                    
+
+
+                        <li>
+                            <a href="#" class="battles menu-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                                    <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"/>
+                                  </svg>
+
+                                <span class="badge bg-danger float-end computer-activities">2</span>
+                                <span>
+                                    Administrator
+                                </span>
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="#" class="view-users menu-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                                    <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
+                                  </svg>
+                                <span class="badge bg-danger float-end computer-activities">2</span>
+                                <span>
+                                  MET Community
+                                </span>
+                            </a>
+                        </li>
+
+
+                        <li class="menu-title font-20 mb-0">Account</li>
+
+
+                        <li>
+
+                            <a href="#" class="menu-btn ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-person" viewbox="0 0 16 16">
+                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                                </svg>
+                                <span class="badge bg-success text-success float-end rounded-circle p-0 mt-2">....</span>
+                                <span class="username">
+
+                                    Temwa Mvula
+
+                                </span>
+                            </a>
+
+
+                        </li>
+
+                        <li>
+
+                            <a href="#" class="signout menu-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-shield-lock" viewbox="0 0 16 16">
+                                    <path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/>
+                                    <path d="M9.5 6.5a1.5 1.5 0 0 1-1 1.415l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99a1.5 1.5 0 1 1 2-1.415z"/>
+                                </svg>
+                                <span class="">
+                                    Sign out
+
+                                </span>
+                            </a>
+
+
+                        </li>
+
+
+                        <!-- <li class="mb-3 p-2 computer-activities w-100  pb-0 pt-0 login position-absolute bottom-0">
+                                                <div >
+                                                    <button class="btn  bold-text login text-white" style="background-color: #385499; ">
+                                                        <i class="fab fa-facebook-square"></i>
+                                                        Login with Facebook to vote</button>
+                                                </div>
+                        
+                                               </li> -->
+
+
+                    </ul>
+
+
+                </div>
+
+
+                <div class="clearfix"></div>
+
+            </div>
+            <!-- Sidebar -left -->
+
+        </div>
+        <!-- Left Sidebar End -->
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+            <div class="content-page "> 
+                <div
+                class="content">
+
+                <!-- Start Content-->
+                <div
+                    class="container-fluid ">
+
+
+                    
+                    
+                    <!-- home activities -->
+                    <div class="home-activities position-relative ">
+
+                        <h5 class="header-title  darken-color  ">DASHBOARD</h5>     
+
+                        <div class="current-activity">
+                             <div class="">
+                                <h5 class="center darken-color border-bottom mb-2">Previous Activities</h5>
+
+
+
+                                <div class="d-flex flex-column">
+
+                                    <div class="d-flex mb-2 ">
+                                    
+                                        <div class="act-icon darken-color">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-thermometer-high" viewBox="0 0 16 16">
+                                                <path d="M9.5 12.5a1.5 1.5 0 1 1-2-1.415V2.5a.5.5 0 0 1 1 0v8.585a1.5 1.5 0 0 1 1 1.415z"/>
+                                                <path d="M5.5 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0V2.5zM8 1a1.5 1.5 0 0 0-1.5 1.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0l-.166-.15V2.5A1.5 1.5 0 0 0 8 1z"/>
+                                              </svg>
+                                        </div>
+                                        <div class="value">
+    
+                                           <h5 class="darken-color">16℃ <span class=""> max</span></h5> 
+                                            
+                                        </div>
+    
+                                      </div>
+
+                                      <div class="d-flex mb-2">
+                                    
+                                        <div class="act-icon darken-color">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-thermometer-low" viewBox="0 0 16 16">
+                                                <path d="M9.5 12.5a1.5 1.5 0 1 1-2-1.415V9.5a.5.5 0 0 1 1 0v1.585a1.5 1.5 0 0 1 1 1.415z"/>
+                                                <path d="M5.5 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0V2.5zM8 1a1.5 1.5 0 0 0-1.5 1.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0l-.166-.15V2.5A1.5 1.5 0 0 0 8 1z"/>
+                                              </svg>
+                                        </div>
+                                        <div class="value">
+    
+                                           <h5 class="darken-color">16℃ <span class=""> min</span></h5> 
+                                            
+                                        </div>
+    
+                                      </div>
+
+                                      <div class="d-flex mb-2">
+                                    
+                                        <div class="act-icon darken-color mr-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-wind" viewBox="0 0 16 16">
+                                                <path d="M12.5 2A2.5 2.5 0 0 0 10 4.5a.5.5 0 0 1-1 0A3.5 3.5 0 1 1 12.5 8H.5a.5.5 0 0 1 0-1h12a2.5 2.5 0 0 0 0-5zm-7 1a1 1 0 0 0-1 1 .5.5 0 0 1-1 0 2 2 0 1 1 2 2h-5a.5.5 0 0 1 0-1h5a1 1 0 0 0 0-2zM0 9.5A.5.5 0 0 1 .5 9h10.042a3 3 0 1 1-3 3 .5.5 0 0 1 1 0 2 2 0 1 0 2-2H.5a.5.5 0 0 1-.5-.5z"/>
+                                              </svg>
+                                        </div>
+                                        <div class="value">
+    
+                                           <h5 class="darken-color">2m/s <span class="">Wind </span>180<span>&#176;</span> </h5> 
+                                            
+                                        </div>
+    
+                                      </div>
+
+                                      <div class="d-flex mb-2">
+                                    
+                                        <div class="act-icon darken-color mr-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-circle-half" viewBox="0 0 16 16">
+                                                <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+                                              </svg>
+                                        </div>
+                                        <div class="value ">
+    
+                                           <h5 class="darken-color">4 sc <span class=""></span> </h5> 
+                                            
+                                        </div>
+    
+                                      </div>
+
+                                      <div class="d-flex mb-2">
+                                    
+                                        <div class="act-icon darken-color mr-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cloud-rain" viewBox="0 0 16 16">
+                                                <path d="M4.158 12.025a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317zm3 0a.5.5 0 0 1 .316.633l-1 3a.5.5 0 0 1-.948-.316l1-3a.5.5 0 0 1 .632-.317zm3 0a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317zm3 0a.5.5 0 0 1 .316.633l-1 3a.5.5 0 1 1-.948-.316l1-3a.5.5 0 0 1 .632-.317zm.247-6.998a5.001 5.001 0 0 0-9.499-1.004A3.5 3.5 0 1 0 3.5 11H13a3 3 0 0 0 .405-5.973zM8.5 2a4 4 0 0 1 3.976 3.555.5.5 0 0 0 .5.445H13a2 2 0 0 1 0 4H3.5a2.5 2.5 0 1 1 .605-4.926.5.5 0 0 0 .596-.329A4.002 4.002 0 0 1 8.5 2z"/>
+                                            </svg>
+                                        </div>
+                                        <div class="value">
+    
+                                           <h5 class="darken-color">46mm <span class=""></span> </h5> 
+                                            
+                                        </div>
+    
+                                      </div>
+
+                                      
+
+
+
+
+                                   
+
+                                      <div class="d-flex mb-2">
+                                    
+                                        <div class="act-icon darken-color">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-droplet" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M7.21.8C7.69.295 8 0 8 0c.109.363.234.708.371 1.038.812 1.946 2.073 3.35 3.197 4.6C12.878 7.096 14 8.345 14 10a6 6 0 0 1-12 0C2 6.668 5.58 2.517 7.21.8zm.413 1.021A31.25 31.25 0 0 0 5.794 3.99c-.726.95-1.436 2.008-1.96 3.07C3.304 8.133 3 9.138 3 10a5 5 0 0 0 10 0c0-1.201-.796-2.157-2.181-3.7l-.03-.032C9.75 5.11 8.5 3.72 7.623 1.82z"/>
+                                                <path fill-rule="evenodd" d="M4.553 7.776c.82-1.641 1.717-2.753 2.093-3.13l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448z"/>
+                                              </svg>
+                                        </div>
+                                        <div class="value">
+    
+                                           <h5 class="darken-color">26% <span class=""> Humidity</span></h5> 
+                                            
+                                        </div>
+    
+                                      </div>
+
+                                      <div class="d-flex mb-2">
+                                    
+                                        <div class="act-icon darken-color">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                                                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                                              </svg>
+                                        </div>
+                                        <div class="value">
+    
+                                           <h5 class="darken-color"> 1km <span class=""> Visibility:</span></h5> 
+                                            
+                                        </div>
+    
+                                      </div>
+
+                                      
+                                      
+                                      
+    
+    
+                                      
+
+
+                              </div>
+
+
+                             </div>
+
+                        </div>
+
+                        
+
+                        <div class="bg-white-grey card-group">
+                          
+                            <div class="d-flex flex-column justify-content-between pb-5">
+                                   <div class="card mb-2 bg-success records" style="width: 13rem;">                             
+                                    <div class="card-body">
+                                      <h5 class="card-title center darken-color text-white">Record</h5>
+                                      <div class="center darken-color text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-moisture" viewBox="0 0 16 16">
+                                            <path d="M13.5 0a.5.5 0 0 0 0 1H15v2.75h-.5a.5.5 0 0 0 0 1h.5V7.5h-1.5a.5.5 0 0 0 0 1H15v2.75h-.5a.5.5 0 0 0 0 1h.5V15h-1.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 .5-.5V.5a.5.5 0 0 0-.5-.5h-2zM7 1.5l.364-.343a.5.5 0 0 0-.728 0l-.002.002-.006.007-.022.023-.08.088a28.458 28.458 0 0 0-1.274 1.517c-.769.983-1.714 2.325-2.385 3.727C2.368 7.564 2 8.682 2 9.733 2 12.614 4.212 15 7 15s5-2.386 5-5.267c0-1.05-.368-2.169-.867-3.212-.671-1.402-1.616-2.744-2.385-3.727a28.458 28.458 0 0 0-1.354-1.605l-.022-.023-.006-.007-.002-.001L7 1.5zm0 0-.364-.343L7 1.5zm-.016.766L7 2.247l.016.019c.24.274.572.667.944 1.144.611.781 1.32 1.776 1.901 2.827H4.14c.58-1.051 1.29-2.046 1.9-2.827.373-.477.706-.87.945-1.144zM3 9.733c0-.755.244-1.612.638-2.496h6.724c.395.884.638 1.741.638 2.496C11 12.117 9.182 14 7 14s-4-1.883-4-4.267z"/>
+                                          </svg>
+                                    </div>
+                                    </div>
+                                   
+                                   </div>
+
+                                   <div class="card mb-2 bg-primary stations" style="width: 13rem;">                             
+                                    <div class="card-body">
+                                      <h5 class="card-title center darken-color text-white">Data</h5>
+                                      <div class="center darken-color text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-bar-chart" viewBox="0 0 16 16">
+                                            <path d="M4 11H2v3h2v-3zm5-4H7v7h2V7zm5-5v12h-2V2h2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3z"/>
+                                          </svg>
+                                    </div>
+                                    </div>                                  
+                                   </div>
+
+                                   <div class="card mb-2 bg-pink" style="width: 13rem;">                             
+                                    <div class="card-body">
+                                      <h5 class="card-title center text-white">Profile</h5>
+                                      <div class="center darken-color text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                                        </svg>
+                                     </div>
+                                    </div>                                   
+                                   </div>
+
+                                   <div class="card bg-secondary" style="width: 13rem;">                             
+                                    <div class="card-body">
+                                      <h5 class="card-title center text-white">Settings</h5>
+                                      <div class="center darken-color text-white">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
+                                        <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0Zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708ZM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11Z"/>
+                                      </svg>
+                                    </div>
+                                    </div>                                 
+                                   </div>
+
+                                   
+
+                    
+
+                            </div>
+
+
+                          
+
+
+                                
+
+                        </div>
+
+
+                        <!-- home activities end -->
+                    </div>
+
+
+                    <div class="record-activities d-none">
+                        <h5 class="card-title darken-color">Tuesday, 12 July 2022: 9:00am ob</h5>
+                        <div class="card mb-1">                        
+                            <div class="card-body p-1 pb-2">                         
+                              <p class="card-text">Section A: Wind</p>
+
+                              <div class="d-flex justify-content-between">
+                                <div><input class="form-control mr-2" placeholder="First Anemometer" type="number"></div>
+                                <div><input class="form-control" placeholder="Second Anemometer" type="number"></div>
+                                
+                              </div>
+                              <p>Result: <small class="text-success">4m/s</small></p>
+                              <div><input class="form-control mr-2" placeholder="Wind direction in degrees" type="number"></div>
+
+                              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                            </div>
+                          </div>
+
+                          <div class="card mb-1">                        
+                            <div class="card-body p-1 pb-2">                         
+                                <p class="card-text">Section B: Rainfall</p>
+
+                              <div class="d-flex justify-content-between">
+                                <input class="form-control w-100" placeholder="Rainfall Value" type="number">
+                                                             
+                              </div>
+                              
+                            </div>
+                          </div>
+
+                          <div class="card">                        
+                            <div class="card-body p-1 pb-2">                         
+                              <p class="card-text"><span class="bold-text bold-text darken-color">Section C:</span> Temperature</p>
+
+                              <div class="d-flex justify-content-between">
+                                <div><input class="form-control mr-2" placeholder="Max" type="number"></div>
+                                <div><input class="form-control" placeholder="Min" type="number"></div>                            
+                              </div>
+
+                              <div class="d-flex justify-content-between mb-1">
+                                <div><input class="form-control mr-2" placeholder="Dry bulb" type="number"></div>
+                                <div><input class="form-control" placeholder="Wet bulb" type="number"></div>                            
+                              </div>
+
+                              <p>Dew point: <small class="text-success m-0">16.7</small> calculated</p>
+                              <p>Humidity: <small class="text-success m-0">76%</small> calculated</p>
+                              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                            </div>
+                          </div>
+
+                          <div class="card m-1">                        
+                            <div class="card-body p-1 pb-2">                         
+                              <p class="card-text"><span class="bold-text bold-text darken-color">Section D:</span> Evaporation </p>
+
+                              <div class="d-flex justify-content-between">
+                                <input class="form-control mr-2" placeholder="Evaporation" type="number">
+                                                          
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="card m-1">                        
+                            <div class="card-body p-1 pb-2">                         
+                              <p class="card-text"><span class="bold-text bold-text darken-color">Section D:</span> Sunshine </p>
+
+                              <div class="d-flex justify-content-between">
+                                <input class="form-control mr-2" placeholder="Evaporation" type="number">
+                                                          
+                              </div>
+                            </div>
+                          </div>
+
+                          
+
+
+
+
+
+
+
+                          <div class="card mb-1">                        
+                            <div class="card-body p-1 pb-2">                         
+                              <p class="card-text"><span class="bold-text bold-text darken-color">Section E:</span> Current weather </p>
+
+                              <div class="d-flex flex-column">
+                                <input class="form-control mr-2 mb-1" placeholder="Octus" type="number">
+                                
+                                <input class="form-control mr-2 mb-1" placeholder="Cloud type" type="number">
+                                <input class="form-control mr-2 mb-1" placeholder="Cloud height" type="number">
+                                <input class="form-control mr-2 mb-1" placeholder="Visibility" type="number">
+
+                                <button class="btn btn-soft-info">Add new cloud</button>
+                                                          
+                              </div>
+
+                            </div>
+
+                            
+                            
+                            <div class="d-flex">
+
+                                <button class="btn btn-primary">Save data</button>
+
+                                <button class="btn btn-primary ml-2 mr-2">Generate synop</button>
+                                <button class="btn btn-primary  bg-success">Send</button>
+                            </div>
+                          </div>
+
+
+                          
+
+                          
+
+                          
+
+                          
+
+
+
+
+                    </div>
+
+                    <div class="station-activities d-none">
+
+                        <div class="d-flex flex-column ">
+                            <div class="d-flex justify-content-between  mb-1 select-station">
+                                <div class="mr-2 border-right darken-color bg-white p-2 rounded">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-file-earmark-bar-graph" viewBox="0 0 16 16">
+                                        <path d="M10 13.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-6a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v6zm-2.5.5a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1zm-3 0a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-1z"/>
+                                        <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+                                      </svg>
+                                </div>
+                                <div class="ml-2 border-bottom mr-2">
+                                     
+                                     <h5 class="header-title darken-color">Bvumbwe_8545</h5>
+                                     <p>Thyolo/southern region</p>
+                                 </div>
+    
+                                 <div class="border-bottom ">
+                                    <h5 class="header-title text-success ">Last update</h5>
+                                    <p>Max 25, Min 24</p>
+                                 </div>
+                            </div>   
+                            
+                            
+                         </div>
+
+                         <div class="d-flex flex-column ">
+                            <div class="d-flex justify-content-between  mb-1 select-station">
+                                <div class="mr-2 border-right darken-color bg-white p-2 rounded">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-file-earmark-bar-graph" viewBox="0 0 16 16">
+                                        <path d="M10 13.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-6a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v6zm-2.5.5a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1zm-3 0a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-1z"/>
+                                        <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+                                      </svg>
+                                </div>
+                                <div class="ml-2 border-bottom mr-2">
+                                     
+                                     <h5 class="header-title darken-color">Bvumbwe_8545</h5>
+                                     <p>Thyolo/southern region</p>
+                                 </div>
+    
+                                 <div class="border-bottom ">
+                                    <h5 class="header-title text-success ">Last update</h5>
+                                    <p>Max 25, Min 24</p>
+                                 </div>
+                            </div>   
+                            
+                            
+                         </div>
+
+                         <div class="d-flex flex-column ">
+                            <div class="d-flex justify-content-between  mb-1 select-station">
+                                <div class="mr-2 border-right darken-color bg-white p-2 rounded">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-file-earmark-bar-graph" viewBox="0 0 16 16">
+                                        <path d="M10 13.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-6a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v6zm-2.5.5a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1zm-3 0a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-1z"/>
+                                        <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+                                      </svg>
+                                </div>
+                                <div class="ml-2 border-bottom mr-2">
+                                     
+                                     <h5 class="header-title darken-color">Karonga_85435</h5>
+                                     <p>Karonga/Northern region</p>
+                                 </div>
+    
+                                 <div class="border-bottom ">
+                                    <h5 class="header-title text-success ">Last update</h5>
+                                    <p>Max 25, Min 24</p>
+                                 </div>
+                            </div>   
+                            
+                            
+                         </div>
+
+                         <div class="d-flex flex-column ">
+                            <div class="d-flex justify-content-between  mb-1 select-station">
+                                <div class="mr-2 border-right darken-color bg-white p-2 rounded">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-file-earmark-bar-graph" viewBox="0 0 16 16">
+                                        <path d="M10 13.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-6a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v6zm-2.5.5a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1zm-3 0a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-1z"/>
+                                        <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+                                      </svg>
+                                </div>
+                                <div class="ml-2 border-bottom mr-2">
+                                     
+                                     <h5 class="header-title darken-color">Mzimba_8545</h5>
+                                     <p>Mzimba/Northern region</p>
+                                 </div>
+    
+                                 <div class="border-bottom ">
+                                    <h5 class="header-title text-success ">Last update</h5>
+                                    <p>Max 25, Min 24</p>
+                                 </div>
+                            </div>   
+                            
+                            
+                         </div>
+
+                         <div class="d-flex flex-column ">
+                            <div class="d-flex justify-content-between  mb-1 select-station">
+                                <div class="mr-2 border-right darken-color bg-white p-2 rounded">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-file-earmark-bar-graph" viewBox="0 0 16 16">
+                                        <path d="M10 13.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-6a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v6zm-2.5.5a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1zm-3 0a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-1z"/>
+                                        <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+                                      </svg>
+                                </div>
+                                <div class="ml-2 border-bottom mr-2">
+                                     
+                                     <h5 class="header-title darken-color">Station Name_8545</h5>
+                                     <p>District/southern region</p>
+                                 </div>
+    
+                                 <div class="border-bottom ">
+                                    <h5 class="header-title text-success ">Last update</h5>
+                                    <p>Max 25, Min 24</p>
+                                 </div>
+                            </div>   
+                            
+                            
+                         </div>
+
+                         <div class="d-flex flex-column ">
+                            <div class="d-flex justify-content-between  mb-1 select-station">
+                                <div class="mr-2 border-right darken-color bg-white p-2 rounded">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-file-earmark-bar-graph" viewBox="0 0 16 16">
+                                        <path d="M10 13.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-6a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v6zm-2.5.5a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1zm-3 0a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-1z"/>
+                                        <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+                                      </svg>
+                                </div>
+                                <div class="ml-2 border-bottom mr-2">
+                                     
+                                  <h5 class="header-title darken-color">Station Name_8545</h5>
+                                  <p>District/southern region</p>
+                                 </div>
+    
+                                 <div class="border-bottom ">
+                                    <h5 class="header-title text-success ">Last update</h5>
+                                    <p>Max 25, Min 24</p>
+                                 </div>
+                            </div>   
+                            
+                            
+                         </div>
+
+                         
+    
+  
+
+                    </div>
+
+                    <div class="data-activities bg-white d-none">
+                        <div class="table-responsive">
+                            <div class="card bg-primary text-white rounded">
+                                <div class="p-2">
+                                    <h5 class="font-20 text-white">Recent Data for Bvumbwe: </h5>
+                                    <p>Recorded date: 15th July 2022</p>
+                                    <p>Issued by: Temwa Mvula</p>
+                                    <input class="form-control mb-2 bg-white border-0" placeholder="Search by date">
+                                    <div class="d-flex justify-content-between">
+                                        <a class="border-bottom text-white">Synops</a>
+                                        <a class="border-bottom text-white">Queries</a>
+                                    </div>
+                                   
+                                </div>
+
+                           </div>
+                            
+                        <table class="table table-bordered border-secondary">
+                            <thead>
+                              <tr>
+                                <th scope="col font-11">synop code </th>
+                                <th scope="col">YY</th>
+                                <th scope="col">GG</th>
+                                <th scope="col">iw</th>
+                                <th scope="col">iR</th>
+                                <th scope="col">iX</th>
+
+
+                                <th scope="col">h</th>
+                                <th scope="col">vv</th>
+                                <th scope="col">N</th>
+                                <th scope="col">dd</th>
+                                <th scope="col">ff</th>
+                                <th scope="col">1</th>
+
+
+                                <th scope="col">Sn</th>
+                                <th scope="col">TTT</th>
+                                <th scope="col">2</th>
+
+
+                                <th scope="col">Sn</th>
+                                <th scope="col">TdTdTd</th>
+                                <th scope="col">3</th>
+
+
+                                <th scope="col">PoPoPo</th>
+                                <th scope="col">4</th>
+
+
+                                
+
+
+
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">OBS</th>
+                                <td></td>
+                                <td>05</td>
+                                <td class="table-active-dark"></td>
+                                <td class="table-active-dark"></td>
+                                <td class="table-active-dark"></td>
+                                
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="table-active-dark"></td>
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+                                
+
+
+
+
+
+
+
+                               
+                              
+                              </tr>
+                              <tr>
+                                <th scope="row">AAXX</th>
+                                <td></td>
+                                <td>03</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="">1</td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td >2</td>
+
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td >3</td>
+
+                                <td ></td>
+                                <td >4</td>
+
+
+                                
+
+                                
+                              </tr>
+
+
+                              
+                              <tr>
+                                <th scope="row">climat</th>
+                                <td ></td>
+                                <td>05</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="table-active-dark"></td>
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+                                
+                              </tr>
+
+                              <tr>
+                                <th scope="row">OBS</th>
+                                <td ></td>
+                                <td>06</td>
+                                <td class="table-active-dark"></td>
+                                <td class="table-active-dark"></td>
+                                <td class="table-active-dark"></td>
+
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="table-active-dark"></td>
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+                                
+                                
+                              </tr>
+                              <tr>
+                                <th scope="row">climat</th>
+                                <td ></td>
+                                <td>06</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+                                
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+                                
+                              </tr>
+                              <tr>
+                                <th scope="row">OBS</th>
+                                <td ></td>
+                                <td>07</td>
+                                <td class="table-active-dark"></td>
+                                <td class="table-active-dark"></td>
+                                <td class="table-active-dark"></td>
+
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="table-active-dark"></td>
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+                                
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+                                
+
+                                
+                              </tr>
+                              
+                              <tr>
+                                <th scope="row">climat</th>
+                                <td ></td>
+                                <td>07</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="table-active-dark"></td>
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+                                
+
+                                
+                              </tr>
+                              
+                              <tr>
+                                <th scope="row">OBS</th>
+                                <td ></td>
+                                <td>08</td>
+                                <td class="table-active-dark"></td>
+                                <td class="table-active-dark"></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+                                
+
+                                
+                              </tr>
+                              
+                              <tr>
+                                <th scope="row">AAXX</th>
+                                <td ></td>
+                                <td>06</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="">1</td>
+
+                                <td ></td>
+                                <td ></td>
+                                <td >2</td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td >3</td>
+
+                                <td ></td>
+                                <td >4</td>
+
+
+                                
+
+                                
+                              </tr>
+                              
+                              <tr>
+                                <th scope="row">climat</th>
+                                <td ></td>
+                                <td>08</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+                                
+                              </tr>
+                              
+                              <tr>
+                                <th scope="row">OBS</th>
+                                <td ></td>
+                                <td>09</td>
+                                <td class="table-active-dark"></td>
+                                <td class="table-active-dark"></td>
+                                <td class="table-active-dark"></td>
+
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+                                
+                              </tr>
+                              
+                              <tr>
+                                <th scope="row">climat</th>
+                                <td ></td>
+                                <td>09</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+ 
+
+                                
+                              </tr>
+                              
+                              <tr>
+                                <th scope="row">OBS</th>
+                                <td ></td>
+                                <td>10</td>
+                                <td class="table-active-dark"></td>
+                                <td class="table-active-dark"></td>
+                                <td class="table-active-dark"></td>
+
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+                                
+                              </tr>
+                              
+                              <tr>
+                                <th scope="row">climat</th>
+                                <td ></td>
+                                <td>10</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="table-active-dark"></td>
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+                                
+                              </tr>
+                              
+                              <tr>
+                                <th scope="row">OBS</th>
+                                <td ></td>
+                                <td>11</td>
+                                <td class="table-active-dark"></td>
+                                <td class="table-active-dark"></td>
+                                <td class="table-active-dark"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="table-active-dark"></td>
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+                                
+                              </tr>
+                              
+                              <tr>
+                                <th scope="row">AAXX</th>
+                                <td ></td>
+                                <td>09</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="">1</td>
+
+                                <td ></td>
+                                <td ></td>
+                                <td >2</td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td >3</td>
+
+                                <td ></td>
+                                <td >4</td>
+
+
+                                
+                              </tr>
+                              
+                              <tr>
+                                <th scope="row">climat</th>
+                                <td ></td>
+                                <td>11</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+                                
+                              </tr>
+                              
+                              <tr>
+                                <th scope="row">OBS</th>
+                                <td ></td>
+                                <td>12</td>
+                                <td class="table-active-dark"></td>
+                                <td class="table-active-dark"></td>
+                                <td class="table-active-dark"></td>
+
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="table-active-dark"></td>
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+ 
+
+                                
+                              </tr>
+                              
+                              <tr>
+                                <th scope="row">climat</th>
+                                <td ></td>
+                                <td>12</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+ 
+
+                                
+                              </tr>
+                              
+                              <tr>
+                                <th scope="row">OBS</th>
+                                <td ></td>
+                                <td>13</td>
+                                <td class="table-active-dark"></td>
+                                <td class="table-active-dark"></td>
+                                <td class="table-active-dark"></td>
+
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="table-active-dark"></td>
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+                                
+                              </tr>
+                              
+                              <tr>
+                                <th scope="row">climat</th>
+                                <td ></td>
+                                <td>13</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+                                
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+                                
+                              </tr>
+
+
+                              
+                              <tr>
+                                <th scope="row">OBS</th>
+                                <td ></td>
+                                <td>14</td>
+                                <td class="table-active-dark"></td>
+                                <td class="table-active-dark"></td>
+                                <td class="table-active-dark"></td>
+
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+                                
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+                                
+                              </tr>
+                              
+                              <tr>
+                                <th scope="row">AAXX</th>
+                                <td ></td>
+                                <td>12</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="">1</td>
+
+                                <td ></td>
+                                <td ></td>
+                                <td >2</td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td >3</td>
+
+                                <td ></td>
+                                <td >4</td>
+
+
+                                
+                              </tr>
+                              
+                              <tr>
+                                <th scope="row">climat</th>
+                                <td ></td>
+                                <td>14</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+
+                                
+                              </tr>
+
+
+                              
+                              <tr>
+                                <th scope="row">OBS</th>
+                                <td ></td>
+                                <td>15</td>
+                                <td class="table-active-dark"></td>
+                                <td class="table-active-dark"></td>
+                                <td class="table-active-dark"></td>
+
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+                                
+                              </tr>
+                              
+                              <tr>
+                                <th scope="row">climat</th>
+                                <td ></td>
+                                <td>15</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="table-active-dark"></td>           
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+
+                                
+                              </tr>
+
+
+
+                              
+                              <tr>
+                                <th scope="row">OBS</th>
+                                <td ></td>
+                                <td>16</td>
+                                <td class="table-active-dark"></td>
+                                <td class="table-active-dark"></td>
+                                <td class="table-active-dark"></td>
+
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+
+                                
+                              </tr>
+                              
+                              <tr>
+                                <th scope="row">climat</th>
+                                <td ></td>
+                                <td>16</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+
+                                
+                                
+                              </tr>
+
+
+
+
+                              
+                              <tr>
+                                <th scope="row">OBS</th>
+                                <td ></td>
+                                <td>17</td>
+                                <td class="table-active-dark"></td>
+                                <td class="table-active-dark"></td>
+                                <td class="table-active-dark"></td>
+
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+
+                                
+                              </tr>
+                              
+                              <tr>
+                                <th scope="row">AAXX</th>
+                                <td ></td>
+                                <td>15</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="">1</td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td >2</td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td >3</td>
+
+                                <td ></td>
+                                <td >4</td>
+
+
+
+                                
+                              </tr>
+
+                              <tr>
+                                <th scope="row">climat</th>
+                                <td ></td>
+                                <td>17</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="table-active-dark"></td>
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+                                <td ></td>
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+                                <td ></td>
+                                <td class="table-active-dark"></td>
+
+
+
+                                
+                              </tr>
+                              
+
+
+
+                              
+                              
+                            </tbody>
+                          </table>
+
+                          <h5>AAXX 13061 67791 32480 61702 10142 20110 81530 333 20124//// 81615 </h5>
+
+                        </div>
+                    
+                    </div>
+
+
+                    <!-- battles -->
+
+
+                </div>
+
+                <!-- ============================================================== -->
+            <!-- End Page content -->
+                <!-- ============================================================== -->
+
+
+            </div>
+            <!-- END wrapper -->
+
+
+            <!-- /Right-bar -->
+
+            <!-- Right bar overlay--><div class="rightbar-overlay"> </div>
+
+            <!-- Vendor js -->
+
+        </body>
+        <script src="assets/js/vendor.min.js"></script>
+
+        <!-- KNOB JS -->
+
+        <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+
+
+        <script src="assets/libs/morris.js06/morris.min.js"></script>
+        <script src="assets/libs/raphael/raphael.min.js"></script>
+
+        <!-- <script src="assets/js/pages/apexcharts.init.js"></script> -->
+
+        <!-- App js -->
+        <script src="assets/js/app.min.js"></script>
+
+        <!-- <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script> -->
+
+        <!-- <script type="module" src="assets/js/agent/index.agent.js"></script> -->
+
+        <!-- <script type="module" src="assets/js/users/firebase.auth.js"></script> -->
+
+        <script>
+            $(document).ready(function(){
+
+                var toData=false;
+                // records
+                $('.records').unbind('click').on('click', function(){
+
+                   $('.home-activities, .station-activities').addClass('d-none');
+                   $('.record-activities, .heading-activities').removeClass('d-none');
+                   $('.activity-name').html('Observation form');
+                })
+
+                $('.to-home').bind('click').on('click', function(){
+                    if(toData==false){
+                        $('.record-activities, .station-activities, .data-activities, .heading-activities').addClass('d-none')
+                        $('.home-activities').removeClass('d-none');
+                    }else{
+                        $('.record-activities, .home-activities, .data-activities').addClass('d-none')
+                        $('.station-activities, .heading-activities').removeClass('d-none');
+                        $('.activity-name').html('Weather Stations');
+                        toData=false;
+
+                    }
+                })
+
+                // stations
+
+                $('.stations').unbind('click').on('click', function(){
+                    $('.record-activities, .home-activities, .data-activities').addClass('d-none')
+                    $('.station-activities, .heading-activities').removeClass('d-none');
+                    $('.activity-name').html('Weather Stations');
+                })
+
+
+
+
+                $('.select-station').unbind('click').on('click', function(){
+                    toData=true;
+                   $('.select-station').removeClass('selected');
+
+                   
+
+                    $(this).addClass('selected');
+                    $('.record-activities, .home-activities, .station-activities').addClass('d-none');
+                    $('.data-activities, .heading-activities').removeClass('d-none');
+                    $('.activity-name').html('Bvumbwe data');
+                    
+                })
+
+              
+
+            })
+        </script>
+    </html>
+</body></html>
