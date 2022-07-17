@@ -7999,12 +7999,7 @@ h1 {
   padding: 0px !important;
 }
 
-.home-card{
-  min-width: 107px;
-  max-width: 107px;
-   justify-content: center;
-   text-align: center;
-}
+
 
 .audio-container .facebook {
   position: absolute;
@@ -9280,7 +9275,7 @@ option, select{
     font-weight: 500 !important;
     height: 43px !important;
     line-height: 0px !important; 
-    color:  #1f4d65 !important;
+    
     text-align: center;
    
   }
@@ -9294,20 +9289,60 @@ option, select{
 height: 45px !important;
 
 }
-@media (max-width: 302px) {
+@media (max-width: 358px) {
   .custom-link, .menu-bars, .search-button{
     width: 90% !important;
     text-align: left !important;
     font-size: 25px !important;
-    font-weight: 500 !important;
+    font-weight: 700 !important;
     height: 43px !important;
     line-height: 0px !important; 
-    color: #1f4d65;
+   
     text-align: center;
    
   }
 
+  .home-card{
+     width: 12rem !important;
+     
+  }
+
 }
+
+@media (max-width: 358px) {
+  .home-card{
+    width: 11rem !important;
+    
+ }
+}
+@media (max-width: 304px) {
+  .home-card{
+    width: 10rem !important;
+    
+ }
+
+ 
+}
+
+@media (max-width: 278px) {
+  .home-card{
+    width: 9rem !important;   
+    
+ }
+
+ .custom-link, .menu-bars, .search-button{
+  width: 90% !important;
+  text-align: left !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  height: 43px !important;
+  line-height: 0px !important; 
+ 
+  text-align: center;
+ 
+}
+}
+
 .custom-link> svg, .menu-bars > svg{
  height: 40px !important;
 
