@@ -8955,7 +8955,7 @@ option, select{
   background-color: #d5ecef;
   padding: 5px;
   width: 15%;
-  min-height: 100vh;
+  min-height: inherit;
 }
 
 
@@ -8974,8 +8974,16 @@ option, select{
   width: 36rem; margin-left: 30px;
 }
 
-@media (max-width: 503px) {
+.search-button> svg{
+  /* height: 400px !important; */
+  margin-top: 15px;
+}
 
+@media (max-width: 503px) {
+  .search-button> svg{
+    /* height: 400px !important; */
+    margin-top: 0px;
+  }
   .card-graph-home{
 
     width: 100%; margin-left: 0px;
@@ -9044,13 +9052,13 @@ option, select{
   padding:1px;
 }
   .current-activity{
-    position: fixed;
+    position: absolute;
     right:0%;
-    top: 23%;
+    /* top: 23%; */
     background-color: #d5ecef;
     padding: 1px;
     width: 40%;
-    min-height: 100vh;
+    min-height: 94vh;
   }
   
   
