@@ -9311,13 +9311,13 @@ height: 45px !important;
 
 @media (max-width: 358px) {
   .home-card{
-    width: 11rem !important;
+    width: 12rem !important;
     
  }
 }
 @media (max-width: 304px) {
   .home-card{
-    width: 10rem !important;
+    width: 12rem !important;
     
  }
 
@@ -9326,7 +9326,7 @@ height: 45px !important;
 
 @media (max-width: 278px) {
   .home-card{
-    width: 9rem !important;   
+    width: 12rem !important;   
     
  }
 
