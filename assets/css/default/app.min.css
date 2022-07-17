@@ -8951,7 +8951,7 @@ option, select{
 .current-activity{
   position: fixed;
   right:0%;
-  top: 90px;
+  top: 130;
   background-color: #d5ecef;
   padding: 5px;
   width: 15%;
@@ -8959,77 +8959,38 @@ option, select{
 }
 
 
+.content-page{
+  margin-top: 3% !important;
+}
+
+
+.home-dash-wrapper{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card-graph-home{
+
+  width: 36rem; margin-left: 30px;
+}
 
 @media (max-width: 503px) {
 
-  .playlist   {
-    margin: 4px -12px !important;
-    padding: 0px !important;
-    padding-top: 4px !important;
-    max-height: 100vh;
-    min-height: 100vh;
-    /* background-color: red; */
-    overflow-y: scroll !important;
-    display: flex !important;
-    flex-direction: column !important;
-    overflow-x: hidden;
-    /* border: 1px solid red; */
-    
-   /* margin-right: 1px !important;
-    margin-left: 1px !important;
-*/
-    -ms-overflow-style: none !important;  
-    scrollbar-width: none !important;  
+  .card-graph-home{
+
+    width: 100%; margin-left: 0px;
+    padding: 0px ;
   }
-  .playlist:-webkit-scrollbar { 
-      display: none !important;  
-  }
+.home-dash-wrapper{
+  display: flex;
+  flex-direction: column;
+}
 
  
 
-    
-  .page-activities{
-    
-     display: none;
-     border-top: 3px solid #4ec0fc;
-    
-    
-  }
-  .page-activities-content{
-     margin: 0px -11px  0px -11px !important;
-    margin-top: 74px !important;
-     padding: 0px !important;
-     display: none;
-     border-top: 3px solid #4ec0fc;
-     max-height: 80vh;
-     min-height: 80vh;
-     overflow-y: auto !important;
-     overflow-x: none !important;
-
-  }
+ 
 
 
-
-  .modal-right{
-    width: 14rem;
-  }
-  .phone-activities{
-    display: block !important;
-  }
-  /* .phone-activity-menu{
-    position: fixed;
-    top: 20px;
-  } */
-  footer {
-    position: fixed !important;
-    bottom: 1 !important;
-    display: block;
-    background-color: #fff !important;
-    height: 35px;
-    /* background-color: #711228c7 !important; */
-    /* display: none; */
-    /* border-top: 1px solid var(--blue-bubble); */
-  }
 
   .cover-image{
     /* border-radius: 15px !important; */
@@ -9085,7 +9046,7 @@ option, select{
   .current-activity{
     position: fixed;
     right:0%;
-    top: 27%;
+    top: 23%;
     background-color: #d5ecef;
     padding: 1px;
     width: 40%;
@@ -9094,7 +9055,9 @@ option, select{
   
   
 
-
+  .phone-activities{
+    display: block !important;
+  }
 
 
 
@@ -9121,6 +9084,7 @@ option, select{
     display: block;
     background-color: #f3f7f9;
   }
+  /* 340 */
   .content-page{
     margin-top: 25% !important;
   }

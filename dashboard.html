@@ -23,7 +23,8 @@
         <!-- <link href="assets/css/default/app-dark.min.css" rel="stylesheet" type="text/css" id="app-dark-stylesheet" /> -->
 
         <!-- <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" /> -->
-
+   <!-- Chartist Chart CSS -->
+   <link rel="stylesheet" href="assets/libs/chartist/chartist.min.css">
         <!-- icons -->
         <!-- <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'> </script> -->
         <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css"/> <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -315,7 +316,7 @@
 
                                 <span class="badge bg-danger float-end computer-activities">2</span>
                                 <span>
-                                    Administrator
+                                    Admins
                                 </span>
                             </a>
                         </li>
@@ -556,6 +557,8 @@
 
                         
 
+                        <div class="home-dash-wrapper">
+
                         <div class="bg-white-grey card-group">
                           
                             <div class="d-flex flex-column justify-content-between pb-5">
@@ -617,6 +620,52 @@
                                 
 
                         </div>
+
+                         <div>
+
+                          <div class="">
+                            <div class="card card-graph-home" dir="ltr" >
+                                <div class="card-body p-0">
+                                    <h5 class="header-title darken-color p-2">Max and min temperature</h5>
+                                    <p class="sub-header p-2 pt-0">
+                                        Summary of max and min temperature for 12 stations
+                                    </p>
+
+                                    <div id="overlapping-bars" class="ct-chart ct-golden-section"></div>
+                                </div>
+                            </div> <!-- end card -->
+
+                            <div>
+
+                              <div class="row">
+                                <div class="col-sm-">
+                                  <div class="card card-graph-home">
+                                    <div class="card-body">
+                                      <h5 class="card-title">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-rss-fill" viewBox="0 0 16 16">
+                                          <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm1.5 2.5c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1 0-2zm0 4a6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1 0-2zm.5 7a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                                        </svg>
+                                        MET NEWS</h5>
+                                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi consequatur reprehenderit cupiditate quidem laboriosam odit quia non rerum
+                                         nulla recusandae voluptatem architecto, qui, quos incidunt nemo ex nam, laudantium repudiandae.</p>
+                                      <a href="#" class="btn btn-primary">Read more</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                              </div>
+                               
+
+                            </div>
+
+                        </div> <!-- end col -->
+
+                         </div>
+
+
+                        </div>
+
+
 
 
                         <!-- home activities end -->
@@ -2003,11 +2052,12 @@
 
         <!-- KNOB JS -->
 
-        <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+       <!--Chartist Chart-->
+       <script src="assets/libs/chartist/chartist.min.js"></script>
+       <script src="assets/libs/chartist-plugin-tooltips/chartist-plugin-tooltip.min.js"></script>
 
-
-        <script src="assets/libs/morris.js06/morris.min.js"></script>
-        <script src="assets/libs/raphael/raphael.min.js"></script>
+       <!-- Init js -->
+       <script src="assets/js/pages/chartist.init.js"></script>
 
         <!-- <script src="assets/js/pages/apexcharts.init.js"></script> -->
 
