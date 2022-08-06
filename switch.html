@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>kjdk</title>
+</head>
+<body>
+	<button>Search</button>
+
+	<script src="jquery.js"></script>
+
+<script >
+
+	$('button').on('click', function(){
+		 navigator.bluetooth.requestDevice({ filters: [{ services: ['battery_service'] }] })
+		.then(device => { /* … */ })
+		.catch(error => { console.error(error); });
+	})
+	
+
+</script>
+</body>
+</html>
