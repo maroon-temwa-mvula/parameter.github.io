@@ -8835,7 +8835,7 @@ footer {
 
 .left-side-menu{
   width: 300px;
-  border-right: 10px solid #fff;
+  /* border-right: 2px solid #fff; */
 }
 
 .page-wrapper-list{
@@ -8949,7 +8949,7 @@ option, select{
   top: 130;
   background-color: #d5ecef;
   padding: 5px;
-  width: 15%;
+  width: 19%;
   min-height: inherit;
 }
 
@@ -8995,12 +8995,7 @@ option, select{
 
 
 
-  .cover-image{
-    /* border-radius: 15px !important; */
-  }
-  audio{
-    border-radius: 0px !important;
-  }
+
 
   .left-side-menu{
     width: 70vw;
@@ -9180,7 +9175,7 @@ option, select{
     /* font-size: 20px !important; */
     
 
-    color: #c6d1d5 !important;
+    /*color: #c6d1d5 !important;*/
   }
 
   
@@ -9311,13 +9306,13 @@ height: 45px !important;
 
 @media (max-width: 358px) {
   .home-card{
-    width: 12rem !important;
+    width: 11rem !important;
     
  }
 }
 @media (max-width: 304px) {
   .home-card{
-    width: 12rem !important;
+    width: 10rem !important;
     
  }
 
@@ -9349,5 +9344,13 @@ height: 45px !important;
 }
 .nav-top >a>svg, .nav-top >label>svg{
 height: 40px !important;
+
+}
+@media (max-width: 334px) {
+  .home-card{
+    /* height: 400px !important; */
+    width: 6rem;
+    background-color: red;
+  }
 
 }
